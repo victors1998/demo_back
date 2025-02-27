@@ -15,6 +15,6 @@ public class BancoServiceImpl extends CRUDImpl<Banco, Integer> implements IBanco
 
     @Override
     protected IGenericoRepo<Banco, Integer> getRepo() {
-        return null;
+        return bancoRepo;
     }
 }

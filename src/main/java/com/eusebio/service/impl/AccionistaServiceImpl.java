@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class AccionistaServiceImpl extends CRUDImpl<Accionista, Integer> implements IAccionistaService {
 
-    private final IAccionistaRepo accionistaRepo;
+    private  IAccionistaRepo accionistaRepo;
 
     @Override
     protected IGenericoRepo<Accionista, Integer> getRepo() {

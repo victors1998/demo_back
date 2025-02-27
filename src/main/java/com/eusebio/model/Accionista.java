@@ -20,6 +20,10 @@ public class Accionista {
     @Column(name = "id_accionista")
     private Integer idAccionista;
 
+    @ManyToOne
+    @JoinColumn(name = "id_sector", foreignKey = @ForeignKey(name = "FK_accionista_sector"))
+    private Sector idSector;
+
     @Column(name = "tipo", length = 150)
     private String tipo;
 

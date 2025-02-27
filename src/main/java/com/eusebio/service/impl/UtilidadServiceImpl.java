@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class UtilidadServiceImpl extends CRUDImpl<Utilidad, Integer> implements IUtilidadService {
 
-    private final IUtilidadRepo utilidadRepo;
+    private  IUtilidadRepo utilidadRepo;
 
     @Override
     protected IGenericoRepo<Utilidad, Integer> getRepo() {

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class ConceptoPlanillaServiceImpl extends CRUDImpl<ConceptoPlanilla, Integer> implements IConceptoPlanillaService {
 
-    private final IConceptoPlanillaRepo repo;
+    private  IConceptoPlanillaRepo repo;
 
     @Override
     protected IGenericoRepo<ConceptoPlanilla, Integer> getRepo() {

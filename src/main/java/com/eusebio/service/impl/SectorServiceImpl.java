@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class SectorServiceImpl extends CRUDImpl<Sector, Integer> implements ISectorService {
 
-    private final ISectorRepo sectorRepo;
+    private  ISectorRepo sectorRepo;
 
     @Override
     protected IGenericoRepo<Sector, Integer> getRepo() {
